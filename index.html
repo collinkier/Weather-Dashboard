@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar sticky-top navbar-dark bg-primary" id="header">
+        <a class="navbar-brand" href="#!">Weather Dashboard</a>
+      </nav>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <ul class="list-group" id="left">
+                <li class="list-group-item active">Select a city!</li>
+                <li class="list-group-item">Boston, MA<button id="two">Select!</button></li>
+                <li class="list-group-item">Los Angeles, CA<button id="three">Select!</button></li>
+                <li class="list-group-item">Seattle, WA<button id="four">Select!</button></li>
+                <li class="list-group-item">Chicago, IL<button id="five">Select!</button></li>
+                <li class="list-group-item">Detroit, MI<button id="six">Select!</button></li>
+                <li class="list-group-item">Saint Louis, LA<button id="seven">Select!</button></li>
+                <li class="list-group-item">Miami, FL<button id="eight">Select!</button></li>
+                <li class="list-group-item">Lincoln, NE<button id="nine">Select!</button></li>
+            </ul>
+          </div>
+          <div class="col-lg-8" id="right">
+
+            <div class="card" id="output">
+                <div class="card-body">
+                  <h3 id="textOutput">City Name Here</h3>
+                  <br>
+                  <p class="stats">Temperature here</p>
+                  <p class="stats">Humidity here</p>
+                  <p class="stats">Wind Speed here</p>
+                  <p class="stats">UV index here</p>
+                </div>
+              </div>
+
+              <p id="outputHeader">Three Day Weather Forecast:</p>
+
+              <div class="card-deck" id="cardDeck">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Date</h4>
+                    <p class="card-text">Temp</p>
+                    <br>
+                    <p class="card-text">Humidity</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Date</h4>
+                    <p class="card-text">Temp</p>
+                    <br>
+                    <p class="card-text">Humidity</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Date</h4>
+                    <p class="card-text">Temp</p>
+                    <br>
+                    <p class="card-text">Humidity</p>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+        </div>
+      </div>
+
+    
+</body>
+</html>
