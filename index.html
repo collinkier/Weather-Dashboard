@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Weather Dashboard</title>
+    <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+   
 </head>
 <body>
 
@@ -19,14 +21,15 @@
           <div class="col-lg-4">
             <ul class="list-group" id="left">
                 <li class="list-group-item active">Select a city!</li>
-                <li class="list-group-item" val="boston">Boston, MA<button id="two" class="buttons">Select!</button></li>
-                <li class="list-group-item" val="los angeles">Los Angeles, CA<button id="three" class="buttons">Select!</button></li>
-                <li class="list-group-item" val="seattle">Seattle, WA<button id="four" class="buttons">Select!</button></li>
-                <li class="list-group-item" val="chicago">Chicago, IL<button id="five" class="buttons">Select!</button></li>
-                <li class="list-group-item" val="detroit">Detroit, MI<button id="six" class="buttons">Select!</button></li>
-                <li class="list-group-item" val="saint louis">Saint Louis, LA<button id="seven" class="buttons">Select!</button></li>
-                <li class="list-group-item" val="miami">Miami, FL<button id="eight" class="buttons">Select!</button></li>
-                <li class="list-group-item" val="lincoln">Lincoln, NE<button id="nine" class="buttons">Select!</button></li>
+                <li class="list-group-item">Boston, MA<button id="two">Select!</button></li>
+                <li class="list-group-item">Los Angeles, CA<button id="three">Select!</button></li>
+                <li class="list-group-item">Seattle, WA<button id="four">Select!</button></li>
+                <li class="list-group-item">Chicago, IL<button id="five">Select!</button></li>
+                <li class="list-group-item">Detroit, MI<button id="six">Select!</button></li>
+                <li class="list-group-item">Saint Louis, LA<button id="seven">Select!</button></li>
+                <li class="list-group-item">Miami, FL<button id="eight">Select!</button></li>
+                <li class="list-group-item">Lincoln, NE<button id="nine">Select!</button></li>
+                
             </ul>
           </div>
           <div class="col-lg-8" id="right">
@@ -35,10 +38,15 @@
                 <div class="card-body">
                   <h3 id="textOutput">City Name Here</h3>
                   <br>
-                  <p class="stats">Temperature here</p>
-                  <p class="stats">Humidity here</p>
-                  <p class="stats">Wind Speed here</p>
-                  <p class="stats">UV index here</p>
+                  <!-- <p class="stats">Temperature here</p> -->
+                  <p id="Temp">Temperature here</p>
+                  <!-- <p class="stats">Humidity here</p> -->
+                  <p id="Humidity">Humidity here</p>
+
+                  <!-- <p class="stats">Wind Speed here</p> -->
+                  <p id="Wind">Wind here</p>
+                  
+                  <!-- <p class="stats">UV index here</p> -->
                 </div>
               </div>
 
@@ -71,10 +79,10 @@
                 </div>
               </div>
 
-          </div>
+        </div>
         </div>
       </div>
 
-    <script type="text/javascript" src="script.js"></script>
+ <script src ="script.js"> </script> 
 </body>
 </html>
